@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rover_delta">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0624120903932078 -0.0282640080894525 0.432729945535538"
+        rpy="0 0 0" />
+      <mass
+        value="13.2207623449304" />
+      <inertia
+        ixx="0.158642716575027"
+        ixy="8.60491381307468E-07"
+        ixz="2.30923551046511E-06"
+        iyy="0.129069389745107"
+        iyz="8.60779421185306E-07"
+        izz="0.162646112270567" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="linkbehindleft">
+    <inertial>
+      <origin
+        xyz="-3.46944695195361E-17 0.0174917373393942 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.782900413754046" />
+      <inertia
+        ixx="0.00213839505168217"
+        ixy="3.75059754427217E-18"
+        ixz="-3.28943881347144E-19"
+        iyy="0.00415573217986098"
+        iyz="1.76718276882576E-18"
+        izz="0.00213839505168217" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbehindleft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbehindleft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="behindleft"
+    type="continuous">
+    <origin
+      xyz="-0.25349 0.28054 0.068047"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkbehindleft" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="linkbehindright">
+    <inertial>
+      <origin
+        xyz="-3.53883589099269E-16 -0.017508262660606 -4.16333634234434E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.782900413754039" />
+      <inertia
+        ixx="0.00213839505168216"
+        ixy="5.13744684447839E-17"
+        ixz="-2.26693805367102E-19"
+        iyy="0.00415573217986095"
+        iyz="2.24431099668924E-18"
+        izz="0.00213839505168216" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbehindright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbehindright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="behindright"
+    type="continuous">
+    <origin
+      xyz="-0.25349 -0.33706 0.068047"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkbehindright" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="linkquaytrai">
+    <inertial>
+      <origin
+        xyz="0.0289647421166409 -0.00735915024312639 -0.121361098949186"
+        rpy="0 0 0" />
+      <mass
+        value="1.07517565910656" />
+      <inertia
+        ixx="0.00302479560345683"
+        ixy="-3.89341977729954E-09"
+        ixz="0.000172470973111219"
+        iyy="0.00503208142649592"
+        iyz="9.32477681032724E-11"
+        izz="0.002595533683283" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkquaytrai.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkquaytrai.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="quaytrai"
+    type="continuous">
+    <origin
+      xyz="0.34825 0.35905 0.21175"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkquaytrai" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="linkbanhtrai">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-15 0.0174382691873848 -1.38777878078145E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.801171684247663" />
+      <inertia
+        ixx="0.00215127585319246"
+        ixy="2.12785518945642E-18"
+        ixz="9.38800088912501E-20"
+        iyy="0.00415661128710577"
+        iyz="1.43079684938816E-19"
+        izz="0.00215127585319247" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbanhtrai.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbanhtrai.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banhtrai"
+    type="continuous">
+    <origin
+      xyz="0.03826 -0.024813 -0.1537"
+      rpy="0 0 0" />
+    <parent
+      link="linkquaytrai" />
+    <child
+      link="linkbanhtrai" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="linkquayphai">
+    <inertial>
+      <origin
+        xyz="0.0342066835970145 3.39134724827161E-05 -0.137660690472721"
+        rpy="0 0 0" />
+      <mass
+        value="1.07517574915818" />
+      <inertia
+        ixx="0.00302480093250994"
+        ixy="-5.90797596266969E-10"
+        ixz="0.000172475794559178"
+        iyy="0.00503209382442131"
+        iyz="-1.28293444075057E-09"
+        izz="0.00259553223546296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkquayphai.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkquayphai.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="quayphai"
+    type="continuous">
+    <origin
+      xyz="0.34301 -0.40826 0.22805"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkquayphai" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="linkbanphai">
+    <inertial>
+      <origin
+        xyz="2.2204E-16 -0.017454 -5.5511E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.80117" />
+      <inertia
+        ixx="0.0021513"
+        ixy="5.2381E-18"
+        ixz="1.8806E-19"
+        iyy="0.0041566"
+        iyz="1.9692E-19"
+        izz="0.0021513" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbanphai.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rover_delta/meshes/linkbanphai.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="banhphai"
+    type="continuous">
+    <origin
+      xyz="0.043502 0.0175 -0.17"
+      rpy="0 0 0" />
+    <parent
+      link="linkquayphai" />
+    <child
+      link="linkbanphai" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
